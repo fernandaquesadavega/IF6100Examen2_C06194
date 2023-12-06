@@ -24,7 +24,7 @@ public class Main {
        System.out.println("Multiplicación: " + multip );
 	   System.out.println("División: " + divis );
    
-       
+     System.out.println("Fin del proceso " );  
 	}
 
 }
