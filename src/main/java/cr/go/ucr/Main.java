@@ -23,7 +23,7 @@ public class Main {
        System.out.println("Resta: " + resta );
        System.out.println("Multiplicación: " + multip );
 	   System.out.println("División: " + divis );
-   
+
      System.out.println("Fin del proceso " );  
 
 
@@ -63,4 +63,6 @@ public class Main {
        System.out.println("División6: " + divis6 );
 	}
 
+
 }
+
