@@ -1,0 +1,132 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import cr.go.ucr.OperacionAritmetica;
+import cr.go.ucr.operaciones.*;
+
+
+class OperacionAritmeticaTest {
+
+		@org.junit.jupiter.api.Test
+		void testSuma1() {
+			OperacionAritmetica context = new OperacionAritmetica(new Sumar());
+			assertEquals(-1, context.procesar(-5, 10)); // Prueba de negativos
+			fail("Not yet implemented");
+		}
+        @org.junit.jupiter.api.Test
+        void testSuma2() {
+            OperacionAritmetica context = new OperacionAritmetica(new Sumar());
+            assertEquals(0, context.procesar(0, 0)); // Prueba de suma con cero
+            fail("Not yet implemented");
+        }
+        @org.junit.jupiter.api.Test
+        void testSuma3() {
+            OperacionAritmetica context = new OperacionAritmetica(new Sumar());
+            assertEquals(100, context.procesar(50, 50)); // Prueba de suma de números iguales
+            fail("Not yet implemented");
+        }
+        @org.junit.jupiter.api.Test
+        void testSuma4() {
+            OperacionAritmetica context = new OperacionAritmetica(new Sumar());
+            assertEquals(-1, context.procesar(-10, -5)); // Prueba de suma de números negativos
+            fail("Not yet implemented");
+        }
+        @org.junit.jupiter.api.Test
+        void testSuma5() {
+            OperacionAritmetica context = new OperacionAritmetica(new Sumar());
+            assertNotEquals(16, context.procesar(8, 8)); // Posible error: suma incorrecta
+            fail("Not yet implemented");
+        }
+
+//-----------------------------------------
+        @org.junit.jupiter.api.Test
+        void testResta1() {
+            OperacionAritmetica context = new OperacionAritmetica(new Resta());
+            assertEquals(16, context.procesar(4, 20)); // Primer dígito mayor al segundo- 16
+            fail("Not yet implemented");
+        }
+        @org.junit.jupiter.api.Test
+        void testResta2() {
+            OperacionAritmetica context = new OperacionAritmetica(new Resta());
+            assertEquals(-1, context.procesar(-5, 10)); // Prueba de negativos
+            fail("Not yet implemented");
+        }    
+        @org.junit.jupiter.api.Test
+        void testResta3() {
+            OperacionAritmetica context = new OperacionAritmetica(new Resta());
+            assertEquals(0, context.procesar(10, 10)); // Prueba de resta que da cero
+            fail("Not yet implemented");
+        }
+        @org.junit.jupiter.api.Test
+        void testResta4() {
+            OperacionAritmetica context = new OperacionAritmetica(new Resta());
+            assertEquals(-2, context.procesar(10, 4)); // Prueba de resta de números positivos
+            fail("Not yet implemented");
+        }
+     
+//-----------------------------------------------
+        @org.junit.jupiter.api.Test
+        void testMultiplicacion1() {
+        	OperacionAritmetica context = new OperacionAritmetica(new Multiplicacion());
+        	assertEquals(-1, context.procesar(-8, -5)); // Prueba de multiplicación de números negativos
+        	fail("Not yet implemented");
+        }
+        @org.junit.jupiter.api.Test
+        void testMultiplicacion2() {
+        	OperacionAritmetica context = new OperacionAritmetica(new Multiplicacion());
+        	assertEquals(8, context.procesar(8, 1)); // Prueba de multiplicación por uno
+        	fail("Not yet implemented");
+        }
+        @org.junit.jupiter.api.Test
+        void testMultiplicacion3() {
+        	OperacionAritmetica context = new OperacionAritmetica(new Multiplicacion());
+        	assertEquals(-1, context.procesar(10, -5)); // Prueba de multiplicación por número negativo
+        	fail("Not yet implemented");
+        }
+        @org.junit.jupiter.api.Test
+        void testMultiplicacion4() {
+        	OperacionAritmetica context = new OperacionAritmetica(new Multiplicacion());
+        	assertEquals(2000, context.procesar(1000, 2)); // Prueba de multiplicación de números grandes
+        	fail("Not yet implemented");
+        }
+
+
+        @org.junit.jupiter.api.Test
+        void testDivision1() {
+        	OperacionAritmetica context = new OperacionAritmetica(new Division());
+        	assertEquals(-1, context.procesar(-10, -2));
+        	fail("Not yet implemented");
+        }
+        @org.junit.jupiter.api.Test
+        void testDivision2() {
+        	OperacionAritmetica context = new OperacionAritmetica(new Division());
+        	assertEquals(-3, context.procesar(8, 0)); // División entre cero
+        	fail("Not yet implemented");
+        }
+        @org.junit.jupiter.api.Test
+        void testDivision3() {
+        	OperacionAritmetica context = new OperacionAritmetica(new Division());
+        	assertEquals(7, context.procesar(7, 1)); // Prueba de división exacta
+        	fail("Not yet implemented");
+        }
+        @org.junit.jupiter.api.Test
+        void testDivision4() {
+        	OperacionAritmetica context = new OperacionAritmetica(new Division());
+        	assertEquals(-2, context.procesar(10, -4)); // Prueba de división de número negativo
+        	fail("Not yet implemented");
+        }
+        @org.junit.jupiter.api.Test
+        void testDivision5() {
+        	OperacionAritmetica context = new OperacionAritmetica(new Division());
+        	assertEquals(5000000, context.procesar(1000000, 2)); // Prueba de división de números grandes
+        	fail("Not yet implemented");
+        }
+        @org.junit.jupiter.api.Test
+        void testDivision6() {
+        	OperacionAritmetica context = new OperacionAritmetica(new Division());
+        	assertEquals(-3, context.procesar(0, 0)); // División entre cero
+        	fail("Not yet implemented");
+        }
+        
+}
